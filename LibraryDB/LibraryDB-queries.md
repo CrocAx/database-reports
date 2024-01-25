@@ -219,18 +219,18 @@ WHERE
 
 #### 2. Updated membership for patron
 > Changed PatronID = 3 membership to '2024-02-15'
-![updatedbooks](./images/updatedpatron.png)
+![updatedpatron](./images/updatedpatron.png)
 
 ## Data from requested search queries
 ### First
 >A query to list all books along with their authors' names.
-![updatedbooks](./images/first.png)
+![updatedfirst](./images/first.png)
 
 ### Second
 >A query to find all books borrowed by a particular patron.
-![updatedbooks](./images/second.png)
+![updatedsecond](./images/second.png)
 
 ### Third
 >A query to list all patrons who have not returned books by the due date.
-![updatedbooks](./images/third.png)
+![updatedthird](./images/third.png)
 
