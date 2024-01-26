@@ -214,23 +214,22 @@ WHERE
 
 ### Updated data
 #### 1. Updated books
-> Changed books name and title for BookID = 1 and BookID = 3
 ![updatedbooks](./images/updatedbooks.png)
+> Changed books name and title for BookID = 1 and BookID = 3
 
 #### 2. Updated membership for patron
-> Changed PatronID = 3 membership to '2024-02-15'
 ![updatedpatron](./images/updatedpatron.png)
+> Changed PatronID = 3 membership to '2024-02-15'
 
 ## Data from requested search queries
 ### First
->A query to list all books along with their authors' names.
 ![updatedfirst](./images/first.png)
+>A query to list all books along with their authors' names.
 
 ### Second
->A query to find all books borrowed by a particular patron.
 ![updatedsecond](./images/second.png)
+>A query to find all books borrowed by a particular patron.
 
 ### Third
->A query to list all patrons who have not returned books by the due date.
 ![updatedthird](./images/third.png)
-
+>A query to list all patrons who have not returned books by the due date.
