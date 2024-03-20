@@ -1,6 +1,4 @@
 -- 1 Count, how many ways can you choose 2 products, in Products table, so that the combined price is exactly 10.
-
-
 SELECT COUNT(*) AS combination_count 
 FROM (
     SELECT P1.id AS id1, P2.id AS id2 
@@ -38,21 +36,15 @@ WHERE A.owner = 'Uolevi'
 -- 5 Get the largest balance of each account during their history.
 
 WITH BalanceHistory AS (
-    SELECT 
-        T.account_id, 
-        A.owner, 
-        SUM(T.change) OVER (PARTITION BY T.account_id ORDER BY T.id) AS Balance
+    SELECT T.account_id, A.owner, SUM(T.change) OVER (PARTITION BY T.account_id ORDER BY T.id) AS Balance
     FROM Accounts A
     LEFT JOIN Transactions T ON A.id = T.account_id
 )
 
-SELECT 
-    owner, 
-    COALESCE(MAX(Balance), 0) AS LargestBalance
+SELECT owner, COALESCE(MAX(Balance), 0) AS LargestBalance
 FROM BalanceHistory
 GROUP BY owner
 ORDER BY LargestBalance DESC;
-
 
 -- 6 Calculate, how many different exercises each student has solved correctly.
 
