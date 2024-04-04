@@ -1,0 +1,49 @@
+Table Recipes{
+  RecipeID ID [primary key]
+  RecipeName varchar
+  TotalCookingTime int
+  Category varchar
+  ImageURL varchar
+}
+
+Table Ingredients{
+  IngredientID ID [primary key]
+  IngredientName varchar
+  AllergyWarning varchar
+}
+
+Table CookingHardware{
+  HardwareID ID [primary key]
+  HardwareName varchar
+}
+
+Table RecipesIngredient{
+  RecipeID ID [ref: > Recipes.RecipeID, primary key]
+  IngredientID ID [ref: > Ingredients.IngredientID, primary key]
+  Amount varchar [not null]
+  Unit varchar [not null]
+  
+}
+
+Table Instructions{
+  InstructionID ID [primary key]
+  RecipeID ID [ref: > Recipes.RecipeID]
+  StepNumber int
+  StepDescription text
+}
+
+Table RecipesHardware{
+  RecipeID ID [ref: > Recipes.RecipeID, primary key]
+  HardwareID ID [ref: > CookingHardware.HardwareID, primary key]
+}
+
+Table AlternativeRecipes{
+  RecipeID ID [ref: > Recipes.RecipeID, primary key]
+  AlternativeRecipesID ID [ref: > Recipes.RecipeID, primary key]
+}
+
+Table AlternativeIngredients{
+  RecipeID ID [ref: > Recipes.RecipeID, primary key]
+  IngredientID ID [ref: > Ingredients.IngredientID, primary key]
+  AlternativeIngredientID ID [ref: > Ingredients.IngredientID, primary key]
+}
