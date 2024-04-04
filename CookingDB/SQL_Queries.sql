@@ -25,8 +25,8 @@ BEGIN
 	-- Selects recipe by using specific ID
     SELECT * FROM Recipes WHERE RecipeID = @RecipeID;
 
-	-- Selects ingredients, amount and unit for specified recipeID
-    SELECT i.IngredientName, ri.Amount, ri.Unit 
+	-- Selects ingredients, amount, unit, and allergy warnings for specified recipeID
+    SELECT i.IngredientName, ri.Amount, ri.Unit, i.AllergyWarning 
     FROM RecipesIngredient ri 
     INNER JOIN Ingredients i ON ri.IngredientID = i.IngredientID 
     WHERE ri.RecipeID = @RecipeID;
