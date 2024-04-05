@@ -2,7 +2,7 @@
 
 ## Abstract
 
-The project is about designing a database for storing information about food recipes. The database is designed to store information about recipes, ingredients, cooking hardware, instructions, alternative recipes, and alternative ingredients. The database is implemented using Microsoft SQL Server Management Studio. The database is populated with sample data and queries are developed to demonstrate the data retrieval capabilities of the database.
+The project is about designing a database for storing information about food recipes. The database is designed to store information about recipes, ingredients, cooking hardware, instructions, alternative recipes, and alternative ingredients. It is implemented using Microsoft SQL Server Management Studio. The database is populated with sample data and queries are developed to demonstrate the data retrieval capabilities.
 
 ## Table of contents
 
@@ -20,12 +20,14 @@ The project is about designing a database for storing information about food rec
 
 ### Description of the database
 
-The database is designed to store information about food recipes. The database has the following tables:
+The database is designed to store information about food recipes.
+
+The database has the following tables:
 
 - Recipes
 - Ingredients
 - CookingHardware
-- RecipesIngredients
+- RecipesIngredient
 - Instructions
 - RecipesHardware
 - AlternativeRecipes
@@ -81,7 +83,7 @@ Other foreign key constraints are defined as follows:
 
 ## Phase 3: Data insertion and query development
 
-In this phase, databas is populated with sample data to work with queries that are developed to demonstrate the data retrieval capabilities of the database.
+In this phase, database is populated with sample data to work with queries that are developed to demonstrate the data retrieval capabilities.
 
 The sample data can be inserted by using file [insertDATA.sql](#insertdatasql). After inserting this, you can insert the alternative data required for this project. You can do that by using the file [insertAlternatives.sql](#insertalternativessql).
 
