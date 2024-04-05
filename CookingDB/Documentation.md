@@ -45,7 +45,7 @@ Application side will allow users to add new recipes by following steps:
 
 ### Designed database ER diagram
 
-![ER Diagram](images/FirstPhaseER.png)
+![ER Diagram](Images/FirstPhaseER.png)
 
 > Note: This ER diagram is only for the first phase of the project. The final ER diagram is updated in the last phase.
 
@@ -126,7 +126,7 @@ In this phase, the final database structure is made. The final ER diagram is upd
 The final database is implemented using **Microsoft SQL Server Management Studio**.
 
 The final ER diagram of the database project:
-![Final ER Diagram](images/FinalER.png)
+![Final ER Diagram](Images/FinalER.png)
 
 All the data insertion and queries are provided in the following files:
 - [createDB.sql](#createdbsql) - Create the database and tables
